@@ -1,0 +1,186 @@
+.footer{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-head{
+    width: 95%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-lists{
+    width: 65%;
+    height: 50%;
+    margin-top: 40px;
+}
+.footer-lists ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.footer-lists ul li{
+    text-align: center;
+}
+.footer-lists ul li a{
+    text-decoration: none;
+    color: #737373;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+.footer-lists ul li a:hover{
+    color: #0063e5;
+}
+.footer-connect{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-text{
+    width: 100%;
+    height: auto;
+    color: #737373;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 3px;
+    text-align: center;
+}
+.footer-logo{
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.media-logo{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.soc-med-logo{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(249,249,249,0.1);
+    color: #ccc;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1.8em;
+    padding-top: 7px;
+    cursor: pointer;
+}
+.soc-med-logo:hover{
+    background-color: #0063e5;
+}
+.copyright-text{
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    color: #737373;
+}
+
+@media screen and (max-width: 780px){
+    .footer-head{
+        width: 95%;
+    }
+    .footer-lists{
+        width: 75%;
+    }
+    .footer-connect{
+        width: 25%;
+    }
+    .footer-lists ul li a{
+        font-size: 0.9em;
+    }
+    .media-logo{
+        width: 42px;
+        height: 42px;
+    }
+    .soc-med-logo{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .footer{
+        height: 140px;
+    }
+    .footer-lists{
+        width: 60%;
+        height: 100%;
+        margin-top: 0;
+    }
+    .footer-lists ul{
+        flex-wrap: wrap;
+    }
+    .footer-lists ul li{
+        padding: 2px;
+    }
+    .footer-connect{
+        width: 35%;
+    }
+    .footer-text{
+        font-size: 1em;
+    }
+    .media-logo{
+        width: 38px;
+        height: 38px;
+    }
+    .soc-med-logo{
+        font-size: 1.3em;
+    }
+    .footer-logo{
+        width: 80%;
+    }
+    .copyright-text{
+        font-size: 0.8em;
+        font-weight: 500;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .footer-lists ul li a {
+        font-size: 0.85em;
+    }
+    .footer-text{
+        font-size: 0.9em;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 325px){
+    .footer-text{
+        font-size: 0.8em;
+    }
+    .footer-logo{
+        width: 90%;
+    }
+    .media-logo{
+        width: 36px;
+        height: 36px;
+    }
+    .soc-med-logo{
+        font-size: 1.2em;
+    }
+    .copyright-text{
+        font-size: 0.75em;
+    }
+}

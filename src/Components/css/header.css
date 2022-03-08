@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(9,11,19);
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+}
+.menu-open{
+    width: 80px;
+    height: 100%;
+    display: none;
+}
+.menu-btn{
+    width: 70%;
+    height: 70%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid rgba(249, 249, 249, 0.2);
+    font-size: 1.6em;
+    text-align: center;
+    margin: 10px;
+    padding-top: 5px;
+}
+.menu-close{
+    width: 80px;
+    height: 70px;
+}
+.head-logo{
+    width: 120px;
+    height: 100%;
+    margin-left: 22px;
+}
+.head-logo a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.head-logo img{
+    width: 100%;
+    height: 100%;
+    padding: 14px 8px 10px 8px;
+}
+.menu-bar-head{
+    display: block;
+}
+.menu-lists{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.list{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6px 8px;
+}
+.list-img{
+    width: 28px;
+    height: 28px;
+}
+.list-img img{
+    width: 100%;
+    height: 100%;
+}
+.list-title{
+    width: 100%;
+    height: 45%;
+    text-align: center;
+}
+.list-title a{
+    font-size: 13px;
+    font-weight: 300;
+    font-family: sans-serif;
+    color: rgb(249, 249, 249,0.800);
+    padding: 6px;
+    text-decoration: none;
+    letter-spacing: 1.42px;
+    transition: 1s ease;
+}
+.list-title a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .5s;
+}
+.list-title a:hover::after {
+    width: 100%;
+}
+.login{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    right: 1px;
+    position: absolute;
+    /* background-color: yellow; */
+}
+.log{
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    color: #e6e6e6;
+    border: 3px solid rgb(249, 249, 249,0.2);
+    border-radius: 4px;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.log:hover{
+    transform: scale(1.1,1.1);
+    border: 3px solid rgb(249, 249, 249,0.7);
+    font-size: 1.2em;
+}
+.menubar-head{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    top: -310px;
+    position: fixed;
+    background: url('/public/images/home-background.png');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+.user-logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    right: 20px;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid rgba(249, 249, 249, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+}
+.user-logo img{
+    width: 100%;
+    height: 100%;
+}
+.user-Details{
+    width: 300px;
+    height: 130px;
+    background-color: black;
+    top: -140px;
+    right: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.4s;
+}
+.user-logo-name{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.user-img{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    overflow: hidden;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.user-img img{
+    width: 100%;
+    height: 100%;
+}
+.user-name{
+    width: 80%;
+    height: 45px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: whitesmoke;
+    font-style: normal;
+    text-align: left;
+    padding: 8px 0px 8px 15px;
+    cursor: pointer;
+}
+.sign-out{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.signout-btn{
+    width: 70%;
+    height: 70%;
+    background-color: #0063e5;
+    color: whitesmoke;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 920px){
+    .header{
+        height: 70px;
+    }
+    .head-logo{
+        width: 150px;
+        height: 100%;
+        margin-left: 0px;
+    }
+    .head-logo img{
+        padding: 8px 4px;
+    }
+    .menu-open{
+        display: block;
+    }
+    .menu-bar-head{
+        display: none;
+    }
+     .menu-lists{
+         width: 90%;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding-left: 10px;
+     }
+     .list{
+         padding: 0px;
+     }
+     .list-img{
+        width: 35px;
+        height: 35px;
+    }
+    .list-title{
+        text-align: left;
+    }
+    .list-title a{
+        font-size: 1.1em;
+    }
+    .list-title a::after {
+        display: none;
+    }
+    .login{
+        width: 25%;
+    }
+    .log{
+        width: 90px;
+        height: 45px;
+        font-size: 1.2em;
+        color: #ccc;
+    }
+    .log:hover{
+        font-size: 1.3em;
+    }   
+}
+
+@media screen and (max-width: 430px){
+    .header{
+        height: 55px;
+    }
+    .user-logo{
+        width: 40px;
+        height: 40px;
+        margin-top: 8px;
+    }
+    .head-logo{
+        width: 200px;
+        margin-left: 33px;
+        padding: 0px;
+    }
+    .head-logo img{
+        padding: 6px;
+    }
+    .login{
+        width: 24%;
+    }
+    .log{
+        width: 70px;
+        height: 40px;
+    }
+    .list-title a{
+        font-size: 0.9em;
+    }
+    .list-img{
+        width: 33px;
+        height: 33px;
+    }
+    .menu-btn{
+        margin: 8px 11px;
+        font-size: 1.4em;
+        padding-top: 4px;
+    }
+}
+@media screen and (max-width: 380px){
+    .head-logo{
+        width: 160px;
+        margin-left: 20px;
+        padding: 0px;
+    }
+    .login{
+        width: 26%;
+    }
+    .log{
+        width: 65px;
+    }
+    .menu-btn{
+        margin: 8px 11px;
+    }
+}
+@media screen and (max-width: 330px){
+    .head-logo{
+        width: 140px;
+        margin-left: 10px;
+        padding: 5px;
+    }
+    .login{
+        width: 26%;
+    }
+    .list-img{
+        width: 32px;
+        height: 32px;
+    }
+    .list-title a{
+        font-size: 0.8em;
+    }
+}
